@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url(images/wheel3.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.menu {
+  text-align: right;
+  padding: 50px;
+  word-spacing: 20px;
+  width: 100%;
+}
+.menu a:first-child {
+  text-align: left;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(248, 246, 246);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.logomoto {
+  width: 200px;
+  margin-left: 10%;
+  font-size: 60px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+}
+.carlogo {
+  margin-right: 450px;
+  margin-bottom: -80px;
+  z-index: 1;
+  position: relative;
+}
+
+.button {
+  font-size: 15px;
+  text-decoration: none;
+  border: 3px solid yellow;
+  color: yellow;
+  padding: 15px;
+}
+.button:hover {
+  background-color: yellow;
+  color: white;
+}
+/* section{
+    height: 100vh; */
+/* }
+.left{
+width: 50%; */
+.inline {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.left {
+  min-width: 50%;
+  padding-top: 15%;
+  padding-left: 10%;
+}
+.redCar {
+  width: 400px;
+  border-radius: 50%;
+  border: 3px solid grey;
+  box-shadow: 5px 5px 10px 5px grey;
+}
+
+.right {
+  width: 50%;
+  /* min-width: 400px; */
+}
+.about {
+  color: red;
+  text-align: left;
+
+  padding-top: 10%;
+  font-size: 30px;
+  font-weight: 700;
+}
+.aboutCompany {
+  width: 100px;
+  font-size: 45px;
+  font-weight: 700;
+}
+.text {
+  color: grey;
+  font-size: 28px;
+}
+.ef {
+  border: 3px solid white;
+  width: 45%;
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(70, 68, 68);
+}
+.ef:hover {
+  background-color: rgb(70, 68, 68);
+  color: white;
+  border-radius: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.desc {
+  font-size: 22px;
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .ef {
+    width: 100%;
+  }
+  .inline {
+    width: 100%;
+  }
+}
+
+.services {
+  background-color: black;
+align-items: center;
+padding: 15px 15px;
+
+
+
+}
+.two {
+  margin-top: 30px;
+  margin-left: 8%;
+}
+.diagnostic {
+  display: inline-block;
+  width: 45%;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: width 5s, height 5s;
+  opacity: 0.5;
+  min-width: 400px;
+  position: relative;
+  text-align: center;
+}
+.diagnostic:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s;
+  
+}
+.textOn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: aliceblue;
+}
+.request {
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+.three {
+  padding: 0px 15px;
+}
+.threePhoto {
+  display: inline-block;
+  width: 33%;
+  padding: 5px;
+  box-sizing: border-box;
+  /* transition: width 2s, height 2s; */
+  opacity: 0.5;
+
+  position: relative;
+  text-align: center;
+  min-width: 400px;
+}
+.threePhoto:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s;
+
+}
+.diagnostic:hover *.request {
+  visibility: visible;
+  cursor: pointer;
+}
+.threePhoto:hover *.request {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.icons {
+  padding-top: 15px;
+}
+
+.contacts {
+  padding-left: 60px;
+  margin-bottom: 10%;
+  font-size: 20px;
+  line-height: 3;
+  text-decoration: none;
+  color: black;
+}
+.totalContacts {
+  display: inline-block;
+  /* geriau padding or margin cia deti? */
+  /* margin-right: 10%; */
+  padding-right: 25px;
+}
+.maps {
+  display: inline-block;
+}
+.stickyMessenger {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  padding: 20px;
+}
+.stickyMessenger:hover .messengerTooltip {
+  visibility: visible;
+}
+.stickyMessenger .messengerTooltip {
+  visibility: hidden;
+  width: max-content;
+  background-color: rgb(245, 238, 238);
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  right: 105%;
+}
+.inputfield {
+  font-size: 30px;
+  padding-top: 60px;
+  margin-left: 80px;
+}
+form {
+  padding: 60px;
+  line-height: 30px;
+}
+.inputForm {
+  font-size: 22px;
+  font-weight: 700;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.choose {
+  font-size: 22px;
+  line-height: 40px;
+}
+input[type="submit"] {
+  padding: 10px;
+  font-weight: 700;
+}
+
+.serviceCheckbox{
+    padding-top: 50px;
+}
+input[type="checkbox"] {
+  width: 40px;
+  height: 20px;
+}
+.inputSection{
+  background-color: rgb(232, 235, 235);
+}
+.footer{
+    text-align: center;
+    padding: 30px;
+    font-weight: 600;
+    color:gray
+}
