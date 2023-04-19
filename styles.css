@@ -9,6 +9,29 @@ header {
   background-size: cover;
   height: 100vh;
 }
+@media screen and (max-width: 600px) {
+  .topnav {
+    /* overflow: hidden; */
+    position: relative;
+  }
+
+  #myLinks {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
 .menu {
   text-align: right;
   padding: 50px;
@@ -129,11 +152,8 @@ width: 50%; */
 
 .services {
   background-color: black;
-align-items: center;
-padding: 15px 15px;
-
-
-
+  align-items: center;
+  padding: 15px 15px;
 }
 .two {
   margin-top: 30px;
@@ -155,7 +175,6 @@ padding: 15px 15px;
   cursor: pointer;
   transform: scale(1.1);
   transition: 1s;
-  
 }
 .textOn {
   position: absolute;
@@ -191,7 +210,6 @@ padding: 15px 15px;
   cursor: pointer;
   transform: scale(1.1);
   transition: 1s;
-
 }
 .diagnostic:hover *.request {
   visibility: visible;
@@ -291,19 +309,19 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-.serviceCheckbox{
-    padding-top: 50px;
+.serviceCheckbox {
+  padding-top: 50px;
 }
 input[type="checkbox"] {
   width: 40px;
   height: 20px;
 }
-.inputSection{
+.inputSection {
   background-color: rgb(232, 235, 235);
 }
-.footer{
-    text-align: center;
-    padding: 30px;
-    font-weight: 600;
-    color:gray
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-weight: 600;
+  color: gray;
 }
