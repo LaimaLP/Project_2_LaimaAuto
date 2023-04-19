@@ -9,22 +9,91 @@ header {
   background-size: cover;
   height: 100vh;
 }
-.menu {
+/* .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+} */
+#menu {
   text-align: right;
   padding: 50px;
   word-spacing: 20px;
   width: 100%;
+  display: block;
 }
-.menu a:first-child {
+#menu a:first-child {
   text-align: left;
 }
 
-.menu a {
+#menu a {
   text-decoration: none;
   color: rgb(248, 246, 246);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
+#openMenuButton {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 25px;
+  color: white;
+  padding: 50px;
+}
+
+#closeMenuButton {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+}
+#menu a:hover {
+  color: black;
+  background-color: aliceblue;
+  padding: 2px;
+}
+/* .material-icons{
+  visibility: hidden;
+} */
+
+@media screen and (max-width: 600px) {
+  .ef {
+    width: 100%;
+  }
+  .inline {
+    width: 100%;
+  }
+  #openMenuButton {
+    /* visibility: visible; */
+    display: block;
+  }
+  #closeMenuButton {
+    display: none;
+  }
+  /* .material-icons{
+    visibility: hidden;
+  } */
+  #menu {
+    display: none;
+    /* visibility: hidden; */
+    background-color: grey;
+    color: white;
+
+    padding-top: 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 200px;
+    box-sizing: border-box;
+    line-height: 70px;
+  }
+}
+
 .logomoto {
   width: 200px;
   margin-left: 10%;
@@ -33,7 +102,7 @@ header {
   color: white;
   font-weight: 700;
 }
-.carlogo {
+.carlogoOnTitle {
   margin-right: 450px;
   margin-bottom: -80px;
   z-index: 1;
@@ -118,22 +187,10 @@ width: 50%; */
   color: green;
 }
 
-@media screen and (max-width: 600px) {
-  .ef {
-    width: 100%;
-  }
-  .inline {
-    width: 100%;
-  }
-}
-
 .services {
   background-color: black;
-align-items: center;
-padding: 15px 15px;
-
-
-
+  align-items: center;
+  padding: 15px 15px;
 }
 .two {
   margin-top: 30px;
@@ -155,7 +212,6 @@ padding: 15px 15px;
   cursor: pointer;
   transform: scale(1.1);
   transition: 1s;
-  
 }
 .textOn {
   position: absolute;
@@ -191,7 +247,6 @@ padding: 15px 15px;
   cursor: pointer;
   transform: scale(1.1);
   transition: 1s;
-
 }
 .diagnostic:hover *.request {
   visibility: visible;
@@ -291,19 +346,19 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-.serviceCheckbox{
-    padding-top: 50px;
+.serviceCheckbox {
+  padding-top: 50px;
 }
 input[type="checkbox"] {
   width: 40px;
   height: 20px;
 }
-.inputSection{
+.inputSection {
   background-color: rgb(232, 235, 235);
 }
-.footer{
-    text-align: center;
-    padding: 30px;
-    font-weight: 600;
-    color:gray
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-weight: 600;
+  color: gray;
 }
