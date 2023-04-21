@@ -25,6 +25,8 @@ header {
   font-weight: 700;
   padding: 4px;
   border: solid rgba(255, 255, 255, 0) 2px;
+  font-size: 20px;
+  text-shadow: 1px 1px 0 rgb(15, 15, 15);
 
 }
 #openMenuButton {
@@ -49,7 +51,7 @@ header {
   z-index: 11;
 }
 
-#menu a:hover {
+#menu a:not(:last-child):hover {
   color: black;
   background-color: aliceblue;
   
@@ -326,7 +328,7 @@ input[type="email"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type="tel"] {
+input[type="number"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -334,6 +336,7 @@ input[type="tel"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+ 
 }
 .choose {
   font-size: 22px;
