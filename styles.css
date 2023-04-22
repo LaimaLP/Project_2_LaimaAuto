@@ -9,22 +9,90 @@ header {
   background-size: cover;
   height: 100vh;
 }
-.menu {
+#menu {
   text-align: right;
   padding: 50px;
-  word-spacing: 20px;
+  word-spacing: 25px;
   width: 100%;
-}
-.menu a:first-child {
-  text-align: left;
+  display: block;
+  z-index: 10;
 }
 
-.menu a {
+#menu a {
   text-decoration: none;
-  color: rgb(248, 246, 246);
+  color: rgba(248, 246, 246);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
+  padding: 4px;
+  border: solid rgba(255, 255, 255, 0) 2px;
+  font-size: 20px;
+  text-shadow: 1px 1px 0 rgb(15, 15, 15);
+
 }
+#openMenuButton {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 25px;
+  color: white;
+  padding: 50px;
+  z-index: 11;
+}
+
+#closeMenuButton {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+  z-index: 11;
+}
+
+#menu a:not(:last-child):hover {
+  color: black;
+  background-color: aliceblue;
+  
+  border: solid white 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .ef {
+    width: 100%;
+  }
+  .inline {
+    width: 100%;
+  }
+  #openMenuButton {
+    display: block;
+  }
+  #closeMenuButton {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+  }
+  #menu {
+    display: none;
+    background-color: rgba(128, 128, 128, 0.781);
+    color: white;
+    padding-top: 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 200px;
+    box-sizing: border-box;
+    line-height: 70px;
+    text-align: left;
+  }
+  #fbIcon {
+    display: none;
+  }
+}
+
 .logomoto {
   width: 200px;
   margin-left: 10%;
@@ -33,9 +101,10 @@ header {
   color: white;
   font-weight: 700;
 }
-.carlogo {
-  margin-right: 450px;
-  margin-bottom: -80px;
+.carlogoOnTitle {
+ 
+  margin-left: 100px;
+  margin-bottom: -30px;
   z-index: 1;
   position: relative;
 }
@@ -118,22 +187,10 @@ width: 50%; */
   color: green;
 }
 
-@media screen and (max-width: 600px) {
-  .ef {
-    width: 100%;
-  }
-  .inline {
-    width: 100%;
-  }
-}
-
 .services {
   background-color: black;
-align-items: center;
-padding: 15px 15px;
-
-
-
+  align-items: center;
+  padding: 15px 15px;
 }
 .two {
   margin-top: 30px;
@@ -155,7 +212,6 @@ padding: 15px 15px;
   cursor: pointer;
   transform: scale(1.1);
   transition: 1s;
-  
 }
 .textOn {
   position: absolute;
@@ -191,7 +247,6 @@ padding: 15px 15px;
   cursor: pointer;
   transform: scale(1.1);
   transition: 1s;
-
 }
 .diagnostic:hover *.request {
   visibility: visible;
@@ -273,7 +328,7 @@ input[type="email"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type="tel"] {
+input[type="number"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -281,6 +336,7 @@ input[type="tel"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+ 
 }
 .choose {
   font-size: 22px;
@@ -291,19 +347,19 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-.serviceCheckbox{
-    padding-top: 50px;
+.serviceCheckbox {
+  padding-top: 50px;
 }
 input[type="checkbox"] {
   width: 40px;
   height: 20px;
 }
-.inputSection{
+.inputSection {
   background-color: rgb(232, 235, 235);
 }
-.footer{
-    text-align: center;
-    padding: 30px;
-    font-weight: 600;
-    color:gray
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-weight: 600;
+  color: gray;
 }
