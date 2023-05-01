@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +29,7 @@
 		}
 	</script>
 </head>
+
 <body>
 	<header>
 		<nav class="topnav">
@@ -42,18 +44,17 @@
 				<i class="fa fa-bars"></i>
 			</a>
 			<a><i id="closeMenuButton" class="material-icons" onclick="menuToggle()">&#xe5cd;</i></a>
-			<a href="#"> <img class="carlogoOnTitle" src="images/carlogo3.png" alt="carlogo" width="150px"></a>
+			<a href="#"> <img class="carlogoOnTitle" src="images/carlogo3.png" alt="carlogo" width="200px"></a>
 		</nav>
-		<div class="stickyMessenger"> <span class="messengerTooltip">Pokalbis gyvai
-			</span><a href="https://www.messenger.com/">
+		<div class="stickyMessenger">
+			<span class="messengerTooltip">Pokalbis gyvai</span>
+			<a href="https://www.messenger.com/">
 				<i class='fab' style='font-size:60px;color: rgb(0, 38, 255);'>&#xf39f;</i>
 			</a>
 		</div>
 		<div class="logomoto">
-			<span>
-				<span style="background-color:rgb(12, 162, 231);color:black">
-					Automobilių</span> ELEKTROS GEDIMŲ ŠALINIMAS
-			</span>
+			<span style="background-color:rgb(12, 162, 231);color:black">
+				Automobilių</span> ELEKTROS GEDIMŲ ŠALINIMAS
 			<a class="button" href="#">VISOS PASLAUGOS</a>
 		</div>
 	</header>
@@ -62,32 +63,33 @@
 			<img class="redCar" src="images/car2.jpg" alt="car">
 		</div>
 		<div class="right">
-			<div id="aboutUs" class="about">APIE MUS</div>
+			<h2 id="aboutUs" class="about">APIE MUS</h2>
+
 			<span class="aboutCompany">Automobilių <br> elektronikos entuziastai</span><br>
 			<span class="text">Automobilių elektronikos remontas – mūsų aistra ir „variklis“.
 				Nuolat mokomės ir tobulėjame, todėl pasiūlome
 				modernius bei efektyvius problemų sprendimų
 				būdus savo klientams.</span>
-			<div class="gallery">
-				<div class="ef">
+			<div>
+				<div class="abouUsIconMoto">
 					<img src="images/efficiency.png" alt="efficiency" width="100px">
 					<div class="desc"> Efektyvumas </div> <br>
 					Greitai nustatome gedimus ir
 					efektyviai juos pašaliname
 				</div>
-				<div class="ef">
+				<div class="abouUsIconMoto">
 					<img src="images/support.png" alt="support" width="100px"><br>
 					<div class="desc"> Patirtis </div> <br>
 					Esame sukaupę didelę patirtį automobilių
 					priežiūros srityje
 				</div>
-				<div class="ef">
+				<div class="abouUsIconMoto">
 					<img src="images/car-insurance.png" alt="car" width="100px">
 					<div class="desc"> Kokybė </div> <br>
 					Aukščiausios kokybės automobilių
 					elektronikos dalys ir įrankiai
 				</div>
-				<div class="ef">
+				<div class="abouUsIconMoto">
 					<img src="images/communication.png" alt="communication" width="100px">
 					<div class="desc"> Konsultavimas </div> <br>
 					Patariame klientams, kaip išvengti
@@ -97,15 +99,13 @@
 		</div>
 	</div> <br>
 	<section id="services" class="services">
-		<h1
-			style="font-size:40px; text-align:center; color:rgb(252, 248, 248); padding-bottom: 5px;border-bottom: 2px solid white;">
-			Paslaugos</h1>
+		<h1>Paslaugos</h1>
 		<div class="two">
 			<div class="diagnostic">
 				<img src="images/1 (2).jpg" alt="diagnostic" style="width:100%">
 				<div class="textOn">
 					<span style="background-color: aqua;font-size:20px;color:black;padding:5px">LaimaAuto</span><br>
-					Automobilių kompiuterinė diagnostika <br>
+					<h3>Automobilių kompiuterinė diagnostika </h3><br>
 					<a href="#requestForm"><button class="request">Užklausa</button>
 					</a>
 				</div>
@@ -114,9 +114,9 @@
 				<img src="images/1 (3).jpg" alt="diagnostic" style="width:100%">
 				<div class="textOn">
 					<span style="background-color: aqua;font-size:20px;color:black;padding:5px">LaimaAuto</span> <br>
-					Gedimų šalinimas <br>
-					<a href="#requestForm"><button class="request">Užklausa</button>
-					</a>
+					<!-- palaidas tekstas "Gedimu salinimas" -->
+					<h3> Gedimų šalinimas </h3> <br>
+					<a href="#requestForm"><button class="request">Užklausa</button></a>
 				</div>
 			</div>
 		</div>
@@ -125,9 +125,8 @@
 				<img src="images/car_service.jpg" alt="diagnostic" style="width:100%">
 				<div class="textOn">
 					<span style="background-color: aqua;font-size:20px;color:black;padding:5px">LaimaAuto</span> <br>
-					DPF/FAP ir EGR programavimas <br>
-					<a href="#requestForm"><button class="request">Užklausa</button>
-					</a>
+					<h3>DPF/FAP ir EGR programavimas </h3> <br>
+					<a href="#requestForm"><button class="request">Užklausa</button></a>
 				</div>
 			</div>
 			<div class="threePhoto">
@@ -135,9 +134,8 @@
 				<div class="textOn">
 					<span style="background-color: aqua;font-size:20px;color:black;padding:5px">LaimaAuto</span>
 					<br>
-					Mechanizmų kalibravimas <br>
-					<a href="#requestForm"><button class="request">Užklausa</button>
-					</a>
+					<h3>Mechanizmų kalibravimas </h3> <br>
+					<a href="#requestForm"><button class="request">Užklausa</button></a>
 				</div>
 			</div>
 			<div class="threePhoto">
@@ -145,14 +143,15 @@
 				<div class="textOn">
 					<span style="background-color: aqua;font-size:20px;color:black;padding:5px">LaimaAuto</span>
 					<br>
-					Kodavimas, programavimas <br>
-					<a href="#requestForm"> <button id='test' class="request">Užklausa</button>
-					</a>
+					<h3>Kodavimas, programavimas </h3> <br>
+					<a href="#requestForm"> <button id='test' class="request">Užklausa</button></a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section style="margin:10% 10% ">
+
+	<!--  uzdeti  flex , o child elementam justifycontent : between  ; Gali buti kad child elementam prireiks "width" procentais      -->
+	<section id="contactsSection">
 		<div id="contacts2" class="totalContacts">
 			<span style="color:red; font-size:25px;">KONTAKTAI </span> <br>
 			<span style="font-size:40px"> <strong>Susisiekite nemokamai <br> konsultacijai </strong></span><br>
@@ -160,16 +159,15 @@
 			<br>
 			<div class="icons">
 				<i class="material-icons" style="font-size:30px">&#xe0cd;</i>
-				<a href="tel:+37011111111" class="contacts"> +37011111111</span> <br>
-					<i class="material-icons" style="font-size:30px">&#xe0be;</i>
-					<a class="contacts" href="mailto:info@laimaauto.lt">info@laimaauto.lt</a>
-					<br>
-					<i class="material-icons" style="font-size:30px">&#xe0c8;</i>
-					<a href="https://www.maps.lt/" class="contacts">Baltijos pr. 177, Klaipėda</span> <br>
-						<i class="fa fa-facebook-official" style="font-size:30px"></i>
-						<a href="https://www.facebook.com/" class="contacts">LaimaAutoLT</a> <br>
-						<i style='font-size:30px' class='fab'>&#xf39f;</i>
-						<a href="https://www.messenger.com/" class="contacts">Messenger</a>
+				<a href="tel:+37011111111" class="contacts"> +37011111111</a> <br>
+				<i class="material-icons" style="font-size:30px">&#xe0be;</i>
+				<a class="contacts" href="mailto:info@laimaauto.lt">info@laimaauto.lt</a><br>
+				<i class="material-icons" style="font-size:30px">&#xe0c8;</i>
+				<a href="https://www.maps.lt/" class="contacts">Baltijos pr. 177, Klaipėda</a> <br>
+				<i class="fa fa-facebook-official" style="font-size:30px"></i>
+				<a href="https://www.facebook.com/" class="contacts">LaimaAutoLT</a> <br>
+				<i style='font-size:30px' class='fab'>&#xf39f;</i>
+				<a href="https://www.messenger.com/" class="contacts">Messenger</a>
 			</div>
 		</div>
 		<div class="maps">
@@ -215,16 +213,18 @@
 				<label class="choose" for="choice9"> Automobilio transportavimas į servisą</label><br>
 				<input type="checkbox" id="choice10" name="choice10">
 				<label class="choose" for="choice10"> Atvykimas remontuoti į vietą</label><br>
-				<br>
 				<label style="font-size:22px; font-weight: 700;" for="message>">Žinutė</label> <br>
 				<textarea id="message" name="message" rows="5" cols="70">
 				</textarea> <br>
 				<input type="submit" value="Pateikti užklausą">
+			</div>
 		</form>
 	</section>
-	<footer class="footer">LaimaAuto.lt 
-		<span style="color:red">® 2023</span> 
-		Visos Teisės Saugomos.
+	<footer>
+		<div class="footer">LaimaAuto.lt <span style="color:red">® 2023</span>
+			Visos Teisės Saugomos.
+		</div>
 	</footer>
 </body>
+
 </html>
