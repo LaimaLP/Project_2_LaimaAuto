@@ -60,10 +60,10 @@ header {
 @media screen and (max-width: 600px) {
   .abouUsIconMoto {
     width: 100%;
-  }
+      }
   .inline {
     width: 100%;
-  }
+    }
   #openMenuButton {
     display: block;
   }
@@ -144,7 +144,6 @@ header {
 .about {
   color: red;
   text-align: left;
-
   padding-top: 10%;
   font-size: 30px;
   font-weight: 700;
@@ -160,10 +159,11 @@ header {
 }
 .abouUsIconMoto {
   border: 3px solid white;
-  width: 45%;
+  min-width: 150px;
+  max-width: 300px;
+ flex-grow: 1;
   text-align: center;
-  display: inline-block;
-  font-weight: 700;
+    font-weight: 700;
   line-height: 20px;
   padding: 10px;
   font-size: 20px;
