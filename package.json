@@ -1,0 +1,25 @@
+{
+  "name": "project_2_laimaauto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dead-server --host=localhost --port=1111",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaimaLP/Project_2_LaimaAuto.git"
+  },
+  "keywords": [],
+  "author": "Laima Pamaiva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LaimaLP/Project_2_LaimaAuto/issues"
+  },
+  "homepage": "https://github.com/LaimaLP/Project_2_LaimaAuto#readme",
+  "description": "",
+  "devDependencies": {
+    "dead-server": "^1.0.9"
+  }
+}
