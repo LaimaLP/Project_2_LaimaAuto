@@ -118,12 +118,12 @@ border-radius: 10px;
 
 }
 .logo-container {
+  width: 40%;
   display: flex;
   flex-direction: column;
   position: relative;
-  /* margin: auto; */
   margin-left: 10%;
-  /* gap:50px */
+
 
 }
 .carlogoOnTitle {
@@ -149,11 +149,14 @@ opacity:0.8;
 
 .button {
   font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
   border: 3px solid yellow;
   color: yellow;
   padding: 15px;
   border-radius: 10px;
+  width: 200px;
+  box-shadow: 2px 2px 5px rgb(139, 137, 137);
 }
 
 .button:hover {
@@ -207,7 +210,6 @@ opacity:0.8;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content:center;
   gap:100px
   
@@ -456,7 +458,6 @@ input[type="number"] {
 
 .choose {
   font-size: 22px;
-  line-height: 40px;
 }
 
 input[type="submit"] {
