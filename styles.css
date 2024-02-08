@@ -1,18 +1,29 @@
 * {
-  box-sizing: border-box;
+
   scroll-behavior: smooth;
+}
+body * {
   margin: 0;
   padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+
 }
 
-body{
-    max-width: 1920px;
+body {
+  max-width: 1500px;
+  margin: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+
 header {
   background-image: url(images/wheel3.jpg);
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
+
 #menu {
   text-align: right;
   padding: 50px;
@@ -21,6 +32,7 @@ header {
   display: block;
   z-index: 10;
 }
+
 #menu a {
   text-decoration: none;
   color: rgba(248, 246, 246);
@@ -31,6 +43,7 @@ header {
   font-size: 20px;
   text-shadow: 1px 1px 0 rgb(15, 15, 15);
 }
+
 #openMenuButton {
   display: none;
   position: absolute;
@@ -41,6 +54,7 @@ header {
   padding: 50px;
   z-index: 11;
 }
+
 #closeMenuButton {
   display: none;
   position: absolute;
@@ -51,27 +65,36 @@ header {
   padding: 20px;
   z-index: 11;
 }
+
 #menu a:not(:last-child):hover {
   color: black;
   background-color: aliceblue;
-
+border-radius: 10px;
   border: solid white 2px;
 }
+
 @media screen and (max-width: 600px) {
   .abouUsIconMoto {
     width: 100%;
-      }
+  }
+  .redCar{
+    max-height: 250px;
+  }
+
   .inline {
     width: 100%;
-    }
+  }
+
   #openMenuButton {
     display: block;
   }
+
   #closeMenuButton {
     display: none;
     cursor: pointer;
     position: fixed;
   }
+
   #menu {
     display: none;
     background-color: rgba(128, 128, 128, 0.781);
@@ -87,30 +110,42 @@ header {
     line-height: 70px;
     text-align: left;
   }
+
   #fbIcon {
     display: none;
   }
-}
-.logomoto {
-  width: 200px;
-  margin-left: 10%;
-    font-size: 60px;
-   color: white;
-  font-weight: 700;
-   position: relative;
+
 
 }
-.logomotooo{
+.logo-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
-}
-
+  /* margin: auto; */
+  margin-left: 10%;
+  /* gap:50px */
 
 }
 .carlogoOnTitle {
-    position:absolute;
-    left: 2%;
-    top:6%;
+position: absolute;
+z-index: 1;
+top:1%;
+left:3%;
+opacity:0.8;
+
 }
+.logomotoText {
+  width: 200px;
+  font-size: 60px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  margin-top: 130px;
+
+}
+
+
+
 
 .button {
   font-size: 15px;
@@ -118,35 +153,38 @@ header {
   border: 3px solid yellow;
   color: yellow;
   padding: 15px;
+  border-radius: 10px;
 }
+
 .button:hover {
   background-color: yellow;
-  color: white;
+  color: rgb(3, 3, 3);
 }
+
 .inline {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.left {
+
+.left-section {
   min-width: 50%;
-  padding-top: 15%;
-  padding-left: 10%;
+  margin: auto;
+  text-align: center;
 }
+
 .redCar {
-  /* max-width: 600px; */
   max-width: 500px;
   border-radius: 50%;
   border: 3px solid grey;
   box-shadow: 5px 5px 10px 5px grey;
- margin-top: -18%;
 
-  margin-left: 2%;
-  margin-right: 2%;
- }
-.right {
+}
+
+.right-section {
   width: 50%;
 }
+
 .about {
   color: red;
   text-align: left;
@@ -154,27 +192,40 @@ header {
   font-size: 30px;
   font-weight: 700;
 }
+
 .aboutCompany {
   width: 100px;
   font-size: 45px;
   font-weight: 700;
 }
+
 .text {
   color: grey;
   font-size: 28px;
 }
+.company-values{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content:center;
+  gap:100px
+  
+}
+
 .abouUsIconMoto {
   border: 3px solid white;
   min-width: 150px;
   max-width: 300px;
- flex-grow: 1;
+  flex-grow: 1;
   text-align: center;
-    font-weight: 700;
+  font-weight: 700;
   line-height: 20px;
   padding: 10px;
   font-size: 20px;
   color: rgb(70, 68, 68);
 }
+
 .abouUsIconMoto:hover {
   background-color: rgb(70, 68, 68);
   color: white;
@@ -182,26 +233,32 @@ header {
   transition: 0.5s;
   cursor: pointer;
 }
+
 .desc {
   font-size: 22px;
   color: green;
 }
-h1{
-  font-size:40px; 
-  text-align:center; 
-  color:rgb(252, 248, 248); 
-  padding-bottom: 5px;
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(252, 248, 248);
+  padding-top: 50px;
+  padding-bottom: 25px;
   border-bottom: 2px solid white;
 }
+
 .services {
   background-color: black;
   align-items: center;
   padding: 15px 15px;
 }
+
 .two {
   margin-top: 30px;
   margin-left: 8%;
 }
+
 .diagnostic {
   display: inline-block;
   width: 45%;
@@ -213,12 +270,13 @@ h1{
   position: relative;
   text-align: center;
 }
+
 .diagnostic:hover {
   opacity: 0.9;
-  cursor: pointer;
   transform: scale(1.1);
   transition: 1s;
 }
+
 .textOn {
   position: absolute;
   top: 50%;
@@ -227,15 +285,34 @@ h1{
   font-size: 30px;
   color: aliceblue;
 }
+
 .request {
   font-size: 20px;
   padding: 10px;
   margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgba(198, 205, 228, 0.9);
   visibility: hidden;
+
 }
+.request:hover{
+  background-color: rgba(130, 151, 221, 0.726);
+
+
+
+}
+.laimaAuto{
+  background-color: rgba(0, 60, 255, 0.726);
+  font-size:20px;
+  color:black;
+  padding:7px; 
+  border-radius: 10px;
+}
+
 .three {
   padding: 0px 15px;
 }
+
 .threePhoto {
   display: inline-block;
   width: 33%;
@@ -247,30 +324,37 @@ h1{
   text-align: center;
   min-width: 400px;
 }
+
 .threePhoto:hover {
   opacity: 0.9;
   cursor: pointer;
   transform: scale(1.1);
   transition: 1s;
 }
+
 .diagnostic:hover *.request {
   visibility: visible;
   cursor: pointer;
 }
+
 .threePhoto:hover *.request {
   visibility: visible;
   cursor: pointer;
 }
+
 .icons {
   padding-top: 15px;
 }
-#contactsSection{
-  display:flex;
-  margin:5%;
+
+.contacts-section {
+  display: flex;
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-#contactsSection > div{
-  justify-content:space-between;
-}
+
 .contacts {
   padding-left: 60px;
   margin-bottom: 10%;
@@ -280,50 +364,66 @@ h1{
   color: black;
 }
 
-
-
-.totalContacts {
+.contacts-container {
   display: inline-block;
   padding-right: 25px;
-  width: 40%;
 }
-.maps {
+
+.maps-container {
   display: inline-block;
-  width: 40%;
   padding-left: 5%;
 }
+
+
 .stickyMessenger {
   position: fixed;
-  bottom: 0;
-  right: 10px;
-  padding: 20px;
+  bottom: 20px; 
+  right: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
-.stickyMessenger:hover .messengerTooltip {
-  visibility: visible;
+
+.stickyMessenger:hover {
+  background-color: #f0f0f0;
 }
-.stickyMessenger .messengerTooltip {
-  visibility: hidden;
-  width: max-content;
-  background-color: rgb(245, 238, 238);
-  border-radius: 6px;
-  padding: 5px;
+
+.messengerTooltip {
+  display: none;
   position: absolute;
-  z-index: 1;
-  right: 105%;
+  width: max-content;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
 }
+
+.stickyMessenger:hover .messengerTooltip {
+  display: block;
+}
+
 .inputfield {
   font-size: 30px;
   padding-top: 60px;
   margin-left: 80px;
 }
+
 form {
   padding: 60px;
   line-height: 30px;
 }
+
 .inputForm {
   font-size: 22px;
   font-weight: 700;
 }
+
 input[type="text"] {
   width: 100%;
   padding: 12px 20px;
@@ -333,6 +433,7 @@ input[type="text"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 input[type="email"] {
   width: 100%;
   padding: 12px 20px;
@@ -342,6 +443,7 @@ input[type="email"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 input[type="number"] {
   width: 100%;
   padding: 12px 20px;
@@ -351,23 +453,44 @@ input[type="number"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 .choose {
   font-size: 22px;
   line-height: 40px;
 }
+
 input[type="submit"] {
   padding: 10px;
   font-weight: 700;
 }
+
 .serviceCheckbox {
   padding-top: 50px;
 }
+
 input[type="checkbox"] {
   width: 40px;
   height: 20px;
 }
-.inputSection {
+
+.input-section {
   background-color: rgb(232, 235, 235);
+
+}
+.form-button{
+font-size: 15px;
+padding:7px 20px;
+border-radius: 10px;
+cursor: pointer;
+background-color: rgb(83, 82, 81);
+color: white;
+box-shadow: 2px 2px 5px black;
+}
+
+.form-button:hover{
+  background-color: rgb(243, 240, 236);
+color: rgb(3, 3, 3);
+box-shadow: 2px 2px 5px black;
 }
 .footer {
   text-align: center;
