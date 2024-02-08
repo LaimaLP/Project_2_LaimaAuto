@@ -1,8 +1,9 @@
 # Auto WebPage
+
 _website design project_
 <br>
 ## 🌟 About
-This project is for educational porpuses only.
+This is my first project to learn programming. HTML and CSS. For learning porpuses only.
 
 Site published at: https://laimalp.github.io/Project_2_LaimaAuto/#
 
