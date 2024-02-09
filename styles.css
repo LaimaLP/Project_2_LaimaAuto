@@ -197,15 +197,15 @@ header {
 .about {
   color: red;
   text-align: left;
-  padding-top: 10%;
+  padding: 50px 0 0px 0;
   font-size: 30px;
   font-weight: 700;
 }
 
 .aboutCompany {
-  width: 100px;
   font-size: 45px;
   font-weight: 700;
+  margin: 30px 0;
 }
 
 .text {
@@ -485,6 +485,9 @@ input[type="checkbox"] {
 .input-section {
   background-color: rgb(232, 235, 235);
 
+}
+#message{
+  width: 100%;
 }
 
 .form-button {
